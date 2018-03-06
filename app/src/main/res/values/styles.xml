@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="diagonalStyle">
+        <item name="android:background">@drawable/background</item>
+    </style>
+    <style name="diagonal">
+        <item name="android:background">@drawable/diagonal_line</item>
+    </style>
+    <style name="horizontal">
+        <item name="android:background">@drawable/horizonta</item>
+    </style>
+    <style name="vertical">
+        <item name="android:background">@drawable/vertical</item>
+    </style>
+
+</resources>

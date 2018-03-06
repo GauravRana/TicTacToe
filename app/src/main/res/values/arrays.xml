@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="combination">
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorAccent</item>
+        <item>@color/blue</item>
+        <item>@color/brown</item>
+        <item>@color/lightgreen</item>
+        <item>@color/green</item>
+        <item>@color/yellow</item>
+        <item>@color/pink</item>
+        <item>@color/crimson</item>
+        <item>@color/forest</item>
+        <item>@color/hotPink</item>
+        <item>@color/chart</item>
+    </array>
+</resources>

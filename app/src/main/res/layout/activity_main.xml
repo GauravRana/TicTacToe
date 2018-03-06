@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.grapickel.soyuz.tictactoe.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/tv_player_1_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1 \n 0"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/tv_player_2_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2 \n 0"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_turn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tile1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text=""
+                android:maxLength="1"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tile2"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:maxLength="1"
+                android:textSize="20sp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:id="@+id/tile3"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:maxLength="1"
+                android:textSize="20sp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_gravity="fill_horizontal"/>
+
+            <TextView
+                android:id="@+id/tile4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text=""
+                android:maxLength="1"
+                android:textColor="#ffffff"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:id="@+id/tile5"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text=""
+                android:maxLength="1"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:id="@+id/tile6"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:maxLength="1"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:id="@+id/tile7"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:maxLength="1"
+                android:textSize="20sp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView android:id="@+id/tile8"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:maxLength="1"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView  android:id="@+id/tile9"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:textColor="#ffffff"
+                android:layout_columnWeight="1"
+                android:textSize="20sp"
+                android:text=""
+                android:maxLength="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal" />
+        </GridLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/diagonalStyle">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/diagonal">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/horizontal">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/vertical">
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/tv_refresh"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:src="@drawable/refresh" />
+    </LinearLayout>
+ </LinearLayout>
